@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rec-senha.css">
+</head>
+<body>
+    <main>
+        <div class="login-card bg-secondary-color">
+          <h2>Olá novamente!</h2>
+          <p>
+            Se você esqueceu sua senha, digite seu e-mail 
+          </p>
+          <form name="f1" id="formulario">
+            <input
+              class="campos"
+              name="email"
+              id="email"
+              onblur="validaEmail(f1.email)"
+              type="email"
+              placeholder="Insira seu e-mail"
+              required
+            /><br />
+            <br />
+            <div id="msgemail"></div>
+          </form>
+    
+          <button onclick="submit()">Enviar</button>
+        </div>
+      </main>
+      <script src="login_rec-senha.js"></script>
+</body>
+</html>
