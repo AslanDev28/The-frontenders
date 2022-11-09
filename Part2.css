@@ -1,0 +1,113 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+   width: 100%;
+   height: 100vh;
+}
+.container{
+   width: 1100px;
+   height: 100%;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   color: #4309c2;
+}
+
+
+.container .card{
+   width: 300px;
+   height: auto;
+   padding: 10px 0;
+   text-align: center;
+   background: linear-gradient(135deg,#a05af7 0%, #714efc 100%);
+   border-radius: 15px;
+   box-shadow: 2px 5px 15px black;
+   transform: transform 0.3s;
+}
+.container .card:hover{
+   transform: scale(1.050);
+}
+
+.container .card .card-title{
+   padding: 30px 20px;
+   border-bottom: 2px solid gray;
+}
+
+.container .card .card-title h2{
+   font-size: 35px;
+   padding-bottom: 15px;
+   color: rgb(250, 249, 248);
+}
+
+.container .card .card-title p span{
+   font-size: 40px;
+   padding: 0 10px;
+
+}
+
+.container .card .card-content ul{
+   padding: 10px 40px;
+   padding-bottom: 20px;
+}
+.container .card .card-content ul li{
+   list-style: none;
+   padding: 18px 0;
+}
+
+.container .card .card-content ul li i{
+    margin-right: 5px;
+    margin-top: 10px;
+
+}
+
+.container .card .card-content button{
+   width: 120px;
+   padding: 10px 20px;
+   background: #9c94af;
+   border-radius: 15px;
+   margin-bottom: 35px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.container .card .card-content button:hover{
+   background: #9d64e4;
+   letter-spacing: 1.2px;
+}
+
+.container .card .card-content button{
+   width: 120px;
+   padding: 10px;
+   background: white;
+   border-radius: 20px;
+   margin-bottom: 10px;
+   outline: none;
+
+
+}
+
+h1{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
