@@ -71,7 +71,7 @@ function validarEmail(emaill) {
       usuario.focus();
     } else {
       alert("Você está logado!")
-      location.assign("index-form")
+      location.assign("teste.html")
       
     } 
    

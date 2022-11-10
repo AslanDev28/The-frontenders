@@ -126,7 +126,7 @@ h2 {
     }
     .nav-lista {
         position: absolute;
-        top: 18vh;
+        top: 16vh;
         right: 0;
         width: 50vw;
         height: 92vh;
@@ -159,10 +159,7 @@ h2 {
 }
 
 @media (max-width:500px){
-    nav {
-        position: fixed;
-        margin-top: -10%;
-    }
+   
     h2 {
       display: none;
     }
@@ -431,5 +428,19 @@ hr {
       margin-left: -5%;
       padding: 5px;
       font-size: 9pt;
+  }
+
+
+
+  h2 {
+    display: none;
+  }
+
+  .contato {
+    margin-top: 30%;
+    overflow: hidden;
+    
+    height: auto;
+    
   }
 }

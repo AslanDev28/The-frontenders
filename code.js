@@ -113,7 +113,7 @@ function cadastrar(){
         
     } else{
         alert('Cadastro realizado com sucesso, em até 30 minutos você receberá uma confirmação via email com as orientações de como utilizar o produto!')
-        location.assign("indexhome.html")
+        location.assign("teste.html")
     }
    
 }

@@ -324,6 +324,12 @@ span {
     transition: 0.4s;
     cursor: pointer;
     color: #d3d3d3;
+    
+  }
+
+  .btnlistwait:hover {
+    background: none;
+    padding: 0;
   }
 
 .conteudo-principal-imagem {
