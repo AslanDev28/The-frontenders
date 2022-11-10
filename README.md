@@ -1,5 +1,5 @@
 # Projeto-em-grupo-M2
-
+PROJETO FINALIZADO > LINK DO GITPAG https://aslandev28.github.io/The-frontenders/
 <img> ![AdobeColor-My Color Theme menor](https://user-images.githubusercontent.com/113717097/198853854-99dc0495-d1b4-412e-8744-4c4444db5cf2.jpeg)
  </img> <br>
  Palheta de cores do projeto 
