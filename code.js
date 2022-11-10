@@ -50,18 +50,16 @@ const completarForm = (endereco) =>{
     document.getElementById('endereco').value = endereco.logradouro
     document.getElementById('bairro').value = endereco.bairro
     document.getElementById('localidade').value = endereco.localidade
-    document.getElementById('complemento').value = endereco.complemento
     document.getElementById('estado').value = endereco.uf
-    document.getElementById('num').value = endereco.siafi
+    
 }
 
 const limparForm = (endereco) =>{
     document.getElementById('endereco').value = ''
     document.getElementById('bairro').value = ''
     document.getElementById('localidade').value = ''
-    document.getElementById('complemento').value = ''
     document.getElementById('estado').value = ''
-    document.getElementById('num').value = ''
+    
 }
 
 

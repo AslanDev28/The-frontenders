@@ -17,7 +17,7 @@
 a {
     color: #fff;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .logo {
@@ -172,9 +172,6 @@ body {
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-
-  
-
   /**FORMULARIO CADASTRO**/
 
 .h2sec {
@@ -182,12 +179,15 @@ body {
     margin-top: -3%;
     padding-top: 10%;
     text-shadow: 3px 2px 6px black;
-    color: aliceblue;
-    font-family: 'good', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(231, 231, 231);
+    font-family: 'Bungee', cursive;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+    
 }
 
 
-  
+
 .boxf  {
     display: flex;
     justify-content: space-evenly;
@@ -226,11 +226,11 @@ input {
 
 
 #localidade, #bairro, 
-#estado, #complemento, #endereco {
+#estado, #endereco {
     min-width: 350px;
     max-width: 900px;
     margin: auto;
-    padding: 3px;
+    padding: 8px;
     margin: 7px;
     border: none;
 }
@@ -250,12 +250,7 @@ input {
     
 }
 
-#num {
-    width: 50px;
-    margin-left: 7px;
-    border: none;
 
-}
 
 #cep {
     width:100px;
@@ -266,8 +261,8 @@ input {
 
 .btn {
     text-align: center;
-    margin-left: 19.5%;
-    margin-top: 5px;
+    margin-left: 18.2%;
+    margin-top: -32px;
 }
 
 
@@ -302,7 +297,10 @@ p{
     .h2sec {
         margin-top: 20%;
        
-        
+    }
+    .btn {
+        margin-top: 15px;
+        margin-left: -15px;
     }
 }
     
@@ -377,7 +375,6 @@ hr {
     flex-direction: row;
     justify-content: center;
 }
-
 
 
 /*RODAPE REPONSIVO*/

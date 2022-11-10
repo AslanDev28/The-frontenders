@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     
-  }
+}
   
   @font-face {
     font-family: good;
@@ -17,7 +17,7 @@
 
 a {
   color: #fff;
-  transition: 0.3s;
+  transition: 0.5s;
   
 }
 
@@ -110,7 +110,7 @@ body {
   }
   .nav-lista {
       position: fixed;
-      top: 16vh;
+      top: 15vh;
       right: 0;
       width: 50vw;
       height: 92vh;
@@ -125,7 +125,8 @@ body {
   .imgsec {
       display: none;
   }
-  
+
+
   nav {
       margin-top: 0%;
       position: fixed;
@@ -191,7 +192,7 @@ body {
     background-image: linear-gradient(to bottom, #440a6d, rgb(60, 4, 124));
   }
   
-  
+
   .primary-color {
     color: #080808;
     text-align: center;
@@ -242,6 +243,8 @@ body {
     align-items: center;
     justify-content: center;
   }
+
+
   
   .login-card {
     display: flex;
@@ -252,8 +255,8 @@ body {
     width: 40%;
     height: 55vh;
     padding: 20px;
-    border-radius: 10px;
-    border: 1px solid rgb(99, 99, 98);
+    border-radius: 10px 0px 0px 10px;
+    border: 1px 0px 0px 0px solid rgb(99, 99, 98);
     color: #cccccc;
     text-align: center;
     box-shadow: rgb(19, 18, 18) 2px 2px 8px;
@@ -266,6 +269,7 @@ body {
     padding: 0;
     
   }
+
   
   .login-card button {
     background-color: #d6a228;
@@ -285,7 +289,8 @@ body {
     font-family: 'Bungee', cursive;
     font-size: 1.4em;
   }
-  
+
+
   .login-card button:hover {
     background-color: #1b2b35;
     transition: 0.4s;
@@ -302,6 +307,7 @@ body {
     color: #b9b9b9;
   }
   
+
   .campos::placeholder {
     color: #b6b6b6bb;
   }
@@ -319,32 +325,30 @@ body {
     padding-left: 5px;
   }
 
+
 /*RODAPÈ*/
 
 .rodape {
   background-color: rgb(12, 12, 12);
   padding: 10px;
   margin-top: 12%;
-  height: 34%;
+  height: 37%;
 }
 
 .rodape li {
   list-style: none;
   margin-left: 15px;
   
-  
 }
-
 
 
 .c1{
   display: flex;
   flex-direction: row;
   position: absolute;
+  margin-top: 20px;
   
 }
-
-
 
 .rodape  a {
   background: none;
@@ -360,17 +364,15 @@ body {
 }
 
 .c2 {
-  margin-top: -19px;
+  margin-top: -10px;
   text-align: center;
   
 }
 
 .c3{
   float: right;
-  margin-top: -151px;
-  position: relative;
-  
-  
+  margin-top: -140px;
+
 }
 
 h3 {
@@ -386,6 +388,7 @@ h4 {
 
 hr {
   margin-top: 2%;
+  background-color: #ffffff;
 }
 
 .logrod > img {
@@ -398,6 +401,42 @@ hr {
   justify-content: center;
 }
 
+/*RODAPE REPONSIVO*/
+
+@media screen and (max-width:950px){
+  .logrod{
+      display: none;
+  }
+  hr {
+    display: none;
+  }
+
+  h4 {
+      margin-top: 100px;
+      margin-left: 250px;
+  }
+  h3 {
+      text-align: right;
+  }
+  .logmiddle {
+      display: none;
+      margin-left: 250px;
+  }
+  .c1 {
+      display: flex;
+      flex-direction: row;
+      margin-left: -5%;
+      padding: 5px;
+      font-size: 9pt;
+  }
+  .c3 {
+    margin-top: -103px;
+  }
+  .rodape {
+    margin-top: 5%;
+    height: -3%;
+  }
+}
 
 
 
