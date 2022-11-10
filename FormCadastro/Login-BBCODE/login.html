@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu login!</title>
+    <link href="bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="shortcut icon" href="../FaviconLOOOG/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!--Libras-->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<!--MENU RESPONSIVO--> 
+<header>
+  <nav>
+  <img class="logo2" src="New logos/Logo animada.gif" alt="">
+  <a href="#" class="loghome">BrickB<span>code</span></a>
+  <div class="mobile-menu">
+      <div class="linha1"></div>
+      <div class="linha2"></div>
+      <div class="linha3"></div>
+  </div>
+  <ul class="nav-lista">
+      <li><a href="../index.html">Página inicial</a></li>
+      <li><a href="../Serviços/produto.html">Sobre o serviço</a></li>
+      <li><a href="../FormCadastro/index-form.html">Cadastre-se</a></li>
+      <li><a href="login.html">Login</a></li>
+          
+  </ul>
+</nav>
+</header>
+
+
+
+  <!--FORMLOGIN-->
+  <main>
+    <div class="login-card bg-secondary-color">
+      <h2 class="welcome">Seja bem vindo!</h2>
+      <p>
+        Faça seu login abaixo 
+      </p>
+      <p id="msgerror" class="text-danger"></p>
+      </p>
+    
+      <input
+        onblur="validarEmail(email.value)"
+        class="mb-3 campos"
+        id="email"
+        type="email"
+        placeholder="Insira seu e-mail"
+        required
+      />
+
+      <input
+        class="mb-3 campos"
+        id="senha"
+        type="password"
+        placeholder="Insira sua senha"
+        required
+      />
+      
+      <a href="./rec-senha.html" class="forgetp"><p>Esqueceu sua senha?</p></a>
+      <button onclick="entrar()">Login</button>
+      
+    </div>
+    
+  </main>
+<!--RODAPÈ-->
+  <footer class="rodape">
+    <div class="c1">
+        <ul>
+            <li>
+                <a href="#">Pagina inicial</a>
+                <a href="#">FEBBCODE</a>
+                <a href="#">Redes Sociais</a>
+                <a href="https://www.mozilla.org/pt-BR/privacy/websites/#cookies">Cookies</a>
+                <a href="#">FrontEnders</a>
+                <a href="#">SAC</a>
+                <a href="../Contato/Contato.html">Contate-nos</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">Saiba mais</a>
+                <a href="#">Forum</a>
+                <a href="#">Suporte</a>
+                <a href="#">Carreiras</a>
+                <a href="#">Quem somos</a>
+                <a href="#">Investidores</a>
+                <a href="#">E-commerce</a>
+            </li>
+        </ul>
+    </div>
+    <div class="c2">
+        <img class="logmiddle" src="Imagens/imgrodap.png" alt="" width="150">
+        <h4>&copy;FEBBCODE - Todos os direitos reservados</h4>
+    </div>
+    <div class="c3">
+        <img src="Imagens-rodapé/ic-amex.png" alt="">
+        <img src="Imagens-rodapé/ic-caixa.png" alt="">
+        <img src="Imagens-rodapé/ic-discover.png" alt="">
+        <img src="Imagens-rodapé/ic-elo.png" alt="">
+        <img src="Imagens-rodapé/ic-hipercard.png" alt="">
+        <img src="Imagens-rodapé/ic-mastercard.png" alt="">
+        <img src="Imagens-rodapé/ic-visa.png" alt="">
+        
+        <h3>Formas de Pagamento</h3>
+        <hr>
+        <div class="logrod">
+            <class class="logrod"><img src="New logos/3.png" alt=""></class>
+            <class class="logrod"><img src="New logos/1.png" alt=""></class>
+        
+        </div>
+        
+    </div>
+   
+</footer>
+  
+
+    <script src="login.js"></script>
+</body>
+                  
+</html>

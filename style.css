@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+@font-face {
+  font-family: good;
+  src: url(Fontes/good_timing/good\ timing\ bd.ttf) format('TrueType'); 
+  font-weight: normal;
+  font-size: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  
+}
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.logo {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 3px 2px 6px black
+}
+
+.logo2 {
+  border-radius: 50%;
+  width: 15%;
+}
+
+.logo:hover {
+  opacity: 0.7;
+  background: none;
+  color: #fff;
+  padding: 0;
+}
+
+span {
+  color: #6d1fd4;
+  
+}
+
+a:hover{
+  background-color: #c3a8cfe8;
+  color: rgba(17, 17, 17, 0.788);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'good', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: linear-gradient(to bottom, #441963, #550d8f);
+  height: 8vh;
+  animation: fadeIn 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  padding: 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-80%);
+    opacity: 1;
+}
+to {
+    opacity: 1;
+}
+}
+
+body {
+  background: url(Imagens/Body2.gif) repeat center center;
+  background-size: cover;
+  height: 92vh;
+ 
+}
+
+.nav-lista {
+  list-style: none;
+  display: flex;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+
+}
+
+.nav-lista li {
+  letter-spacing: 1px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+
+
+@media (max-width: 1000px){
+  body {
+      overflow-x: hidden;
+  }
+  .nav-lista {
+      position: fixed;
+      top: 16vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background-image: linear-gradient(to top, #441963, #550d8f);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      
+  }
+
+  .secondIMG {
+    display: none;
+  }
+
+
+  nav {
+      margin-top: -35%;
+      position: fixed;
+      width: 95%
+  }
+
+  .conteudo-principal {
+    margin-top: 35%;
+    font-size: 10pt;
+  }
+
+  .nav-lista li {
+      margin-left: 0;
+      opacity: 0;
+      
+  }
+
+  .mobile-menu {
+      display: block;
+  }
+  a:hover {
+      background: none;
+      padding: 0;
+      opacity: 0.7;
+      border: none;
+  }
+}
+
+.nav-lista.active {
+  transform: translateX(0);
+
+}
+
+
+
+@keyframes navLinkFade {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .linha1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .linha2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .linha3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/*CONTEUDO MAIN*/
+
+body {
+  font-size: 100%;
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Imagens/Body2.gif);
+  background-size: cover;
+  
+  
+}
+
+.conteudo {
+  margin-top: 10%;
+ 
+
+}
+
+@keyframes fadeIn2 {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-image: linear-gradient(48deg, rgb(56, 7, 146), rgb(90, 36, 175));
+  border-radius: 0% 50px 30px 0%;
+  animation: fadeIn2 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: 'Righteous', cursive;
+  font-weight: 100px;
+  font-size: 47px;
+  color: #FFF2E7;
+  background-color: rgb(102, 102, 102);
+  border-radius: 0% 30px 0px 0%;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  text-shadow: -2px 3px 9px rgb(0 0 0 / 77%)
+
+  
+}
+
+span {
+  color: rgba(45, 75, 175, 0.918);
+}
+
+
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 140;
+  font-size: 20px;
+  color: #ECD6C4;
+  text-shadow: 0px 0px 2px #fff2e7b7;
+  max-width: 900px;
+  min-width: 350px;
+  padding: 5px;
+  margin: 0% 13% 2% 8%;
+}
+
+
+
+.conteudo-principal-escrito-botao {
+    background-color: #c6890e;
+    width: 15%;
+    margin: auto;
+    margin-left: 66%;
+    margin-top: -15%;
+    height: 65px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    
+  }
+
+  .listawait {
+    width: 50%;
+    background-image: linear-gradient(48deg, #0e2368ee, #390e44ea, #403697ee, #382252ee, #3f609eea);
+    background-size: 300% 300%;
+    animation: infinite alternate colors 15s ease-in-out;
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+    float: right;
+    padding: 20px;
+    margin-top: 5%;
+    
+    
+  }
+
+  @keyframes colors {
+    from {
+      background-position: 0% 50%;
+    }
+    to {
+      background-position: 100% 0%;
+    }
+  }
+
+  @keyframes fadeIn4 {
+    from {
+      opacity: 0;
+      
+    }
+  }
+
+  .secondIMG{
+    width: 40%;
+    margin-left: 3%;
+    animation: fadeIn3 0.7s ease-out;
+  }
+  
+  .conteudo-principal-escrito-botao:hover {
+    background-color: #1b2b35;
+    transition: 0.4s;
+    cursor: pointer;
+    color: #d3d3d3;
+    
+  }
+
+  .btnlistwait:hover {
+    background: none;
+    padding: 0;
+  }
+
+.conteudo-principal-imagem {
+  width: 40%;
+  margin-top: 5%;
+  animation: fadeIn3 0.7s ease-out;
+}
+
+@keyframes fadeIn3 {
+  from {
+    opacity: 0;
+   
+}
+  to {
+    opacity: 1;
+  }
+
+}
+
+.computer {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+/*
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+  text-align: center;
+}*/
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #FFF2E7;
+  padding-top: 48px;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFF2EF;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ECD6C4;
+  text-align: center;
+  
+  
+}
+
+/*RODAPÈ*/
+
+.rodape {
+  background-color: rgb(12, 12, 12);
+  padding: 15px;
+  margin-top: 5%;
+  
+}
+
+.rodape li {
+  list-style: none;
+  margin-left: 15px;
+  
+}
+
+.c1{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+
+
+.rodape a {
+  background: none;
+  padding: 0;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.rodape a:hover{
+  opacity: 0.7;
+  color: rgb(204, 204, 204);
+}
+
+.c2 {
+  margin-top: -45px;
+  text-align: center;
+}
+
+.c3{
+  float: right;
+  margin-top: -130px;
+}
+
+h3 {
+  color: aliceblue;
+  font: 14pt arial;
+}
+h4 {
+  color: aliceblue;
+  font: 10pt arial;
+}
+hr {
+  margin-top: 2%;
+}
+
+.logrod > img {
+  width: 80px;
+}
+
+.logrod {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+/*RODAPE REPONSIVO*/
+
+@media screen and (max-width:950px){
+  .logrod{
+      display: none;
+  }
+
+  .conteudo-principal-imagem{
+    display: none;
+  }
+
+  .listawait {
+    width: 100%;
+    text-align: right;
+  }
+
+  .conteudo-secundario-paragrafo {
+    text-align: right;
+    font-size: 10pt;
+  }
+
+  .conteudo-principal-escrito-botao {
+    font-size: 8pt;
+    margin-top: 5%;
+    
+  }
+
+  h4 {
+      margin-top: 80px;
+      margin-left: 250px;
+  }
+  h3 {
+      text-align: right;
+  }
+  .logmiddle {
+      
+      margin-left: 250px;
+  }
+  .c1 {
+      display: flex;
+      flex-direction: column;
+      margin-left: -5%;
+      padding: 5px;
+      font-size: 9pt;
+  }
+}

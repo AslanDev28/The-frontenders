@@ -288,7 +288,7 @@ h2 {
 }
 .container .icons{
   position: relative;
-  margin-top: -435px;
+  margin-top: -120%;
   margin-left: 10px;
   list-style: none;
 }
@@ -407,8 +407,13 @@ hr {
   }
 
   .rodape {
+    margin-top: 30%;
     margin-left: -15%;
     width: 115%;
+  }
+
+  .icons {
+    display: none;
   }
 
   h4 {
